@@ -9,7 +9,7 @@ hist(q$tagged_n)
 
 #-------------- somando total das colunas (Y = M*(soma de n)/(soma de m))
 M<- 858-117 #Marcados exceto os mantidos em bretes fixos
-pop <- rep(NA, 10000)    # criando objeto para receber valores de simulação
+pop <- rep(NA, 10000)    # criando objeto para receber valores de simulaÃ§Ã£o
 q$iboot <- 1:nrow(q) # criando coluna indice
 for(i in 1:10000)    # criando contador
 {
@@ -22,11 +22,11 @@ mean(pop) # media
 round(quantile(pop, probs=c(0.025, 0.975), na.rm=T), 4)    # criando objeto com quantis referentes ao 95% CI
 sd(pop) # sd
 
-ker95km<- 378.9897 #�rea de estudo em kilometros quadrados
+ker95km<- 378.9897 #área de estudo em kilometros quadrados
 dens<- mean(pop)/ker95km
-#-----------------calculando a proporção por linha, e usando a média das proporções ---------------------------------------
+#-----------------calculando a proporÃ§Ã£o por linha, e usando a mÃ©dia das proporÃ§Ãµes ---------------------------------------
 
-pop2 <- rep(NA, 10000)    # criando objeto para receber valores de simulação
+pop2 <- rep(NA, 10000)    # criando objeto para receber valores de simulaÃ§Ã£o
 
 for(i in 1:10000)    # criando contador
 {
