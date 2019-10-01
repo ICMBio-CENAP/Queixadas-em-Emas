@@ -12,7 +12,7 @@ pop.simul.teorica
 setwd("D:/OneDrive - ICMBio/Anexos")
 
 # read dataset
-q <- read.table('queixadas.csv', header=T, sep=",")
+q <- read.table('data/queixadas.csv', header=T, sep=",")
 matriz.teorica<-data.frame(total_n=q$total_n, 
                            tagged_n= 0)
 

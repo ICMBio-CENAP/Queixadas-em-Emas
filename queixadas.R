@@ -2,7 +2,7 @@
 setwd("D:/OneDrive - ICMBio/Anexos/")
 
 # read dataset
-q <- read.table('queixadas.csv', header=T, sep=",")
+q <- read.table('data/queixadas.csv', header=T, sep=",")
 q$media.prop <- q$tagged_n/q$total_n
 hist(q$tagged_n)
 
